@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
   setTimeout(function(){
     $('.logo').css({
@@ -10,10 +8,11 @@ $(document).ready(function(){
     }).appendTo($('#page-content .left')).animate({
       left: '50px',
       top: '30px'
-    }, 500)
+    }, 500, function(){
+      $('.nav ul').slideDown()
+    })
     $("#page-container").fadeOut('fast', function(){
       $("#page-container").remove()
     })
-
   }, 0)
 });
