@@ -209,7 +209,8 @@ ul {
 
 .products {
   align-items: center;
-display: flex;
+  display: flex;
+  flex-wrap: wrap;
 justify-content: center;
   height: auto;
   width: 100%;
