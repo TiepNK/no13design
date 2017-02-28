@@ -84,3 +84,8 @@ width: 100vw;
 p span {
   color: red;
 }		
+#box a{
+	text-decoration: none;
+	padding: 10px;
+	display: inline-block;
+}
