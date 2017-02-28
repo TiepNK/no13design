@@ -76,11 +76,36 @@ hr {
   height: 100vh;
   justify-content: center;
   width: 100vw;
-}	
-div {
-text-align: center;
-width: 100vw;
 }
-p span {
+
+body, body * {
+  font-family: 'Montserrat', sans-serif;
+}
+
+div#box {
+  text-align: center;
+  width: 100vw;
+}
+#box p span {
   color: red;
-}		
+}
+
+#page-content {
+  height: 100vh;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+#page-content .left {
+  float: left;
+  height: 100vh;
+  width: 200px;
+}
+#page-content .right {
+  float: right;
+  height: 100vh;
+  width: calc(100vw - 200px);
+}

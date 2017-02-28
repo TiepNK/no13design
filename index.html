@@ -6,36 +6,34 @@
 <title>No13 Portfolios</title>
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" type="text/css">
-	<style text='text/css'>
-		body, body * {
-			font-family: 'Montserrat', sans-serif;
-		}
-	</style>
-<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.typeit/4.3.0/typeit.min.js"></script>
+<script src="javascript/no13.js"></script>
 </head>
 
 <body>
 <div id='page-container'>
 	<div id='box'>
-		<img src="images/logo.jpg">
+		<img class='logo' src="images/logo.jpg">
 		<p>Hello Guys!</p>
 		<br>
-		<p>I'm making <span class='job'></span></p>
+		<p>I'm making <span class='job'>Website Templates.</span></p>
 		<br>
 		<a href="https://www.facebook.com/no13webapp">Facebook</a>
 		<a href="https://www.behance.net/Tiep13">Behance</a>
 		<a href="https://graphicriver.net/user/tiepnk/portfolio?ref=Tiepnk">Envato</a>
 	</div>
 </div>
+<div id='page-content'>
+	<div class='header'>
+		<div class='left'>
+		</div>
+	</div>
+	<div class='content'>
+		<div class='right'>
+		</div>
+	</div>
+</div>
 </body>
-<script>
-$('.job').typeIt({
-strings: ["Website Templates.", "Mobile App Templates.", "Brands.", "Game characters."],
-speed: 200,
-breakLines: false,
-autoStart: false,
-loop: true
-});
-</script>
+
 </html>
