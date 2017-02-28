@@ -14,5 +14,5 @@ $(document).ready(function(){
     $("#page-container").fadeOut('fast', function(){
       $("#page-container").remove()
     })
-  }, 0)
+  }, 5000)
 });
