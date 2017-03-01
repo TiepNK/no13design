@@ -1,3 +1,7 @@
+function Template(url, data){
+  this.content = $.get(url, data)
+}
+
 $(document).ready(function(){
   setTimeout(function(){
     $('.logo').css({
