@@ -178,10 +178,10 @@ ul {
   -webkit-transition: all 0.2s ease-in;
 }
 
-.nav li:hover a {
+.nav li:hover a, .nav li.active a {
   color: #333;
 }
-.nav li:hover a:before {
+.nav li:hover a:before, .nav li.active a:before {
   width: 10px;
 }
 

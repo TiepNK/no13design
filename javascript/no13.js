@@ -1,5 +1,8 @@
-function Template(url, data){
-  this.content = $.get(url, data)
+class Template {
+  constructor(url, data) {
+    this.template = $.get(url, data)
+  }
+
 }
 
 $(document).ready(function(){
@@ -14,9 +17,18 @@ $(document).ready(function(){
       top: '30px'
     }, 500, function(){
       $('.nav ul').slideDown()
+      $('.nav a[href=\\'+location.hash+']').parent().addClass('active')
     })
     $("#page-container").fadeOut('fast', function(){
       $("#page-container").remove()
     })
   }, 0)
+
+  $(document).on('click', '.nav a', function(e){
+    e.preventDefault()
+    window.history.pushState(null, $(this).html(), this.href)
+    $(this).parent().parent().children('.active').removeClass('active')
+    $(this).parent().addClass('active')
+    return false
+  })
 });
