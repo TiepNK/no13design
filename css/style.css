@@ -179,7 +179,10 @@ ul {
     color: #333; }
 
 .products {
-  display: inline-block;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center;
   height: auto;
   width: 100%; }
 
