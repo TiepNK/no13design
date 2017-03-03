@@ -1,63 +1,75 @@
 {
   "products": [
     {
+      "id": "Kata",
       "name": "Kata mobile app",
       "type": "UI Kit",
       "category": "UI Kit",
+      "tags": "ui-kit",
       "price": "$19",
       "link": "#",
       "thumbnail": "images/kata.jpg",
-      "images": "images/kata_full.jpg"
+      "images": "http://pecora.esy.es/image/1170x800/photo/website.jpg"
     },
 
     {
+      "id": "Healer",
       "name": "Healer mobile app",
       "type": "UI Kit",
       "category": "Theme",
+      "tags": "theme",
       "price": "$19",
       "link": "#",
       "thumbnail": "images/healer.jpg",
-      "images": "images/kata_full.jpg"
+      "images": "http://pecora.esy.es/image/1170x800/photo/website.jpg"
     },
 
     {
+      "id": "Soraka",
       "name": "Soraka Charity",
       "type": "Wordpress theme",
       "category": "Theme",
+      "tags": "theme",
       "price": "$19",
       "link": "#",
       "thumbnail": "images/soraka.jpg",
-      "images": "images/kata_full.jpg"
+      "images": "http://pecora.esy.es/image/1170x800/photo/website.jpg"
     },
 
     {
+      "id": "JOK",
       "name": "JOK mobile app",
       "type": "UI Kit",
       "category": "Theme",
+      "tags": "theme",
       "price": "$19",
       "link": "#",
       "thumbnail": "images/jok.jpg",
-      "images": "images/kata_full.jpg"
+      "images": "http://pecora.esy.es/image/1170x800/photo/website.jpg"
     },
 
     {
+      "id": "Fiora",
       "name": "Fiora Education",
       "type": "HTML Template",
       "category": "UI Kit",
+      "tags": "ui-kit",
       "price": "$19",
       "link": "#",
       "thumbnail": "images/fiora.jpg",
-      "images": "images/kata_full.jpg"
+      "images": "http://pecora.esy.es/image/1170x800/photo/website.jpg"
     },
 
     {
+      "id": "Kinh",
       "name": "Kinh Material",
       "type": "E-Commerce Template",
       "category": "UI Kit",
+      "tags": "ui-kit",
       "price": "$19",
       "link": "#",
       "thumbnail": "images/kinh.jpg",
-      "images": "images/kata_full.jpg"
+      "images": "http://pecora.esy.es/image/1170x800/photo/website.jpg"
     }
   ]
 }
