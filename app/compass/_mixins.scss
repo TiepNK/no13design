@@ -1,0 +1,4 @@
+$base-width: 1920px;
+@function base-width($value) {
+  @return $value / $base-width * 100vw;
+}

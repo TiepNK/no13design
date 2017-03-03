@@ -46,7 +46,6 @@
         left: '50px',
         top: '30px'
       }, 500, function() {
-        $('.nav ul').slideDown();
         window.tag = location.hash || '#all';
         $('.nav a[href=\\' + tag + ']').parent().addClass('active');
         getProducts(tag);
@@ -62,6 +61,15 @@
     $(this).parent().addClass('active');
     changeProducts(window.location.hash);
     return false;
+  }).on('click', '.btnMenu', function() {
+    $(this).prev('ul').toggleClass('open');
+    return $(this).toggleClass('cross');
+  }).on('click', '.open a', function() {
+    return $('.btnMenu').click();
+  });
+
+  $(window).resize(function() {
+    return changeProducts(window.location.hash);
   });
 
 }).call(this);

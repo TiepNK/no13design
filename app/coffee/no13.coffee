@@ -27,7 +27,7 @@ String::template = (params) ->
       return self
   return
 
-$(document).ready(->
+$(document).ready ->
   setTimeout (->
     $('.logo').css(
       top: $('.logo').offset().top
@@ -37,7 +37,6 @@ $(document).ready(->
       left: '50px'
       top: '30px'
     }, 500, ->
-      $('.nav ul').slideDown()
       window.tag = location.hash or '#all'
       $('.nav a[href=\\' + tag + ']').parent().addClass 'active'
       getProducts tag
@@ -48,10 +47,19 @@ $(document).ready(->
     return
   ), 0
   return
-).on 'click', '.nav a', (e) ->
+.on 'click', '.nav a', (e) ->
   e.preventDefault()
   window.history.pushState null, $(this).html(), @href
   $(this).parent().parent().children('.active').removeClass 'active'
   $(this).parent().addClass 'active'
   changeProducts window.location.hash
   false
+.on 'click', '.btnMenu', ->
+  $(this).prev('ul').toggleClass('open')
+  $(this).toggleClass('cross')
+.on 'click', '.open a', ->
+  $('.btnMenu').click()
+
+
+$(window).resize ->
+  changeProducts(window.location.hash)
