@@ -1,8 +1,34 @@
-class Template {
-  constructor(url, data) {
-    this.template = $.get(url, data)
+String.prototype.template = function(params){
+  self = this
+  switch(typeof self){
+    case 'string':
+      break
+    case 'object':
+      for (var key in params){
+        self = self.replace(eval('/\{\{'+key+'}}/g'), params[key])
+      }
+      return self
   }
 
+}
+
+function getProducts(tag){
+  $.get('products.json', function(data){
+    $.get('product.html', function(template){
+      products = data.products.map(function(product){
+        return template.template(product)
+      })
+      $('.products').append(products)
+      changeProducts(tag)
+    })
+  })
+}
+
+function changeProducts(tag){
+  $('.products').isotope({
+    itemSelector: '.product',
+    filter: tag == '#all' ? '*' : tag.replace('#', '.')
+  })
 }
 
 $(document).ready(function(){
@@ -17,18 +43,20 @@ $(document).ready(function(){
       top: '30px'
     }, 500, function(){
       $('.nav ul').slideDown()
-      $('.nav a[href=\\'+location.hash+']').parent().addClass('active')
+      window.tag = location.hash || '#all'
+      $('.nav a[href=\\'+tag+']').parent().addClass('active')
+      getProducts(tag)
     })
     $("#page-container").fadeOut('fast', function(){
       $("#page-container").remove()
     })
   }, 0)
-
-  $(document).on('click', '.nav a', function(e){
-    e.preventDefault()
-    window.history.pushState(null, $(this).html(), this.href)
-    $(this).parent().parent().children('.active').removeClass('active')
-    $(this).parent().addClass('active')
-    return false
-  })
-});
+})
+.on('click', '.nav a', function(e){
+  e.preventDefault()
+  window.history.pushState(null, $(this).html(), this.href)
+  $(this).parent().parent().children('.active').removeClass('active')
+  $(this).parent().addClass('active')
+  changeProducts(window.location.hash)
+  return false
+})
