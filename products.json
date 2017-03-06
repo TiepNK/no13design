@@ -9,67 +9,19 @@
       "price": "$19",
       "link": "#",
       "thumbnail": "images/kata.jpg",
-      "images": "http://pecora.esy.es/image/1170x800/photo/website.jpg"
+      "images": "-bánbsite.jpg"
     },
 
-    {
-      "id": "Healer",
-      "name": "Healer mobile app",
-      "type": "UI Kit",
-      "category": "Theme",
-      "tags": "theme",
-      "price": "$19",
+	{
+      "id": "ID San pham o day",
+      "name": "Ten san pham o day",
+      "type": "Dong thu 2 cho ten san pham vi du nhu la HTML Template",
+      "category": "Cai nay hien thi o duoi cho gia san pham",
+      "tags": "đây-là-cái-để-nó-filter-được",
+      "price": "giá",
       "link": "#",
-      "thumbnail": "images/healer.jpg",
+      "thumbnail": "images/kata.jpg",
       "images": "http://pecora.esy.es/image/1170x800/photo/website.jpg"
     },
-
-    {
-      "id": "Soraka",
-      "name": "Soraka Charity",
-      "type": "Wordpress theme",
-      "category": "Theme",
-      "tags": "theme",
-      "price": "$19",
-      "link": "#",
-      "thumbnail": "images/soraka.jpg",
-      "images": "http://pecora.esy.es/image/1170x800/photo/website.jpg"
-    },
-
-    {
-      "id": "JOK",
-      "name": "JOK mobile app",
-      "type": "UI Kit",
-      "category": "Theme",
-      "tags": "theme",
-      "price": "$19",
-      "link": "#",
-      "thumbnail": "images/jok.jpg",
-      "images": "http://pecora.esy.es/image/1170x800/photo/website.jpg"
-    },
-
-    {
-      "id": "Fiora",
-      "name": "Fiora Education",
-      "type": "HTML Template",
-      "category": "UI Kit",
-      "tags": "ui-kit",
-      "price": "$19",
-      "link": "#",
-      "thumbnail": "images/fiora.jpg",
-      "images": "http://pecora.esy.es/image/1170x800/photo/website.jpg"
-    },
-
-    {
-      "id": "Kinh",
-      "name": "Kinh Material",
-      "type": "E-Commerce Template",
-      "category": "UI Kit",
-      "tags": "ui-kit",
-      "price": "$19",
-      "link": "#",
-      "thumbnail": "images/kinh.jpg",
-      "images": "http://pecora.esy.es/image/1170x800/photo/website.jpg"
-    }
   ]
 }

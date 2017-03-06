@@ -83,7 +83,7 @@
     var queryString;
     window.tag = window.location.hash || '#all';
     $('.nav a[href*=\\' + tag + ']').parent().addClass('active');
-    if (window.location.pathname.match(/\/index.html/)) {
+    if (window.location.pathname.match(/\/index.html/) || window.location.pathname == '/') {
       setTimeout((function() {
         $('.logo').css({
           top: $('.logo').offset().top,
