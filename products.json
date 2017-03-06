@@ -23,5 +23,17 @@
       "thumbnail": "images/kata.jpg",
       "images": "http://pecora.esy.es/image/1170x800/photo/website.jpg"
     },
+	  
+	  {
+      "id": "ID San pham o day",
+      "name": "Ten san pham o day",
+      "type": "Dong thu 2 cho ten san pham vi du nhu la HTML Template",
+      "category": "Cai nay hien thi o duoi cho gia san pham",
+      "tags": "đây-là-cái-để-nó-filter-được",
+      "price": "giá",
+      "link": "#",
+      "thumbnail": "images/kata.jpg",
+      "images": "http://pecora.esy.es/image/1170x800/photo/website.jpg"
+    },
   ]
 }
