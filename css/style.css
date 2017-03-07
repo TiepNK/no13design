@@ -100,10 +100,10 @@ div#box {
   top: 0;
   width: 100vw;
   z-index: -1; }
-  #page-content .left {
+#page-content .left {
     float: left;
     width: 200px; }
-  #page-content .right {
+#page-content .right {
     width: calc(100vw - 200px); }
 
 .content {
