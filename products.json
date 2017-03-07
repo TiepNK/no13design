@@ -10,9 +10,8 @@
       "link": "https://ui8.net/products/healer",
       "thumbnail": "images/thumb_healer.jpg",
       "images": "#",
-    }
-
-	{
+    },
+    {
       "id": "JOK",
       "name": "JOK Mobile App UI KIT",
       "type": "UI KIT",
@@ -22,9 +21,8 @@
       "link": "https://ui8.net/products/jok",
       "thumbnail": "images/thumb_jok.jpg",
       "images": "#",
-    }
-	  
-	  {
+    },
+    {
       "id": "ID San pham o day",
       "name": "Ten san pham o day",
       "type": "Dong thu 2 cho ten san pham vi du nhu la HTML Template",
