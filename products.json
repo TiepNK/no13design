@@ -9,8 +9,8 @@
       "price": "$38",
       "link": "https://ui8.net/products/healer",
       "thumbnail": "images/thumb_healer.jpg",
-      "images": "#"
-    },
+      "images": "#",
+    }
 
 	{
       "id": "JOK",
@@ -21,8 +21,8 @@
       "price": "38",
       "link": "https://ui8.net/products/jok",
       "thumbnail": "images/thumb_jok.jpg",
-      "images": "#"
-    },
+      "images": "#",
+    }
 	  
 	  {
       "id": "ID San pham o day",
@@ -33,7 +33,7 @@
       "price": "giá",
       "link": "#",
       "thumbnail": "images/kata.jpg",
-      "images": "#"
-    },
+      "images": "#",
+    }
   ]
 }
