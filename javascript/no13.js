@@ -83,28 +83,7 @@
     var queryString;
     window.tag = window.location.hash || '#all';
     $('.nav a[href*=\\' + tag + ']').parent().addClass('active');
-    if (window.location.pathname.match(/\/index.html/) || window.location.pathname == '/') {
-      setTimeout((function() {
-        $('.logo').css({
-          top: $('.logo').offset().top,
-          left: $('.logo').offset().left,
-          position: 'fixed',
-          'z-index': 1000
-        }).appendTo($('#page-content .left')).animate({
-          left: '50px',
-          top: '30px'
-        }, 500, function() {
-          getProducts(tag);
-        });
-        $('#page-container').fadeOut('fast', function() {
-          $('#page-container').remove();
-        });
-      }), 0);
-    }
-    if (window.location.pathname.match(/\/details.html/)) {
-      queryString = getQueryString();
-      getProduct(queryString.id);
-    }
+    
   }).on('click', '.nav a', function(e) {
     if (!window.location.pathname.match(/\/index.html$/)) {
       return true;
