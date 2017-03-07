@@ -33,7 +33,12 @@
       "price": "giá",
       "link": "#",
       "thumbnail": "images/kata.jpg",
+<<<<<<< HEAD
       "images": "#"
     },
+=======
+      "images": "http://pecora.esy.es/image/1170x800/photo/website.jpg"
+    }
+>>>>>>> origin/master
   ]
 }
