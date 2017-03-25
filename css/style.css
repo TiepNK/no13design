@@ -239,9 +239,9 @@ justify-content: center;
     min-width: 100%; }
 
 .product h3, .product h5 {
-  font-size: 1.25vw;
-  margin-bottom: 1.04167vw; 
-	line-height: 25px;
+  font-size: 1.1vw;
+  margin-bottom: 1vw; 
+	line-height: 30px;
 }
 
 .details {
