@@ -204,7 +204,7 @@ justify-content: center;
   -webkit-transition: all 0.2s ease-in; }
 
 .product .item:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
   top: -20px; }
 .product .price {
   align-self: flex-end;
@@ -240,7 +240,9 @@ justify-content: center;
 
 .product h3, .product h5 {
   font-size: 1.25vw;
-  margin-bottom: 1.04167vw; }
+  margin-bottom: 1.04167vw; 
+	line-height: 25px;
+}
 
 .details {
   padding: 30px;
