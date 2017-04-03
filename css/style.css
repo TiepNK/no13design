@@ -466,3 +466,10 @@ justify-content: center;
 @media (max-width: 1439px) {
   .details {
     width: calc(base-width(1170px) - 240px); } }
+
+.adv {
+text-algin: center;
+}
+.adv a img {
+  max-width: 100%;
+}
