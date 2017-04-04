@@ -467,6 +467,7 @@ justify-content: center;
   .details {
     width: calc(base-width(1170px) - 240px); } }
 
+<<<<<<< Updated upstream
 .adv {
 text-align: center;
 	margin-bottom: 1%;
@@ -474,3 +475,5 @@ text-align: center;
 .adv a img {
   max-width: 100%;
 }
+=======
+>>>>>>> Stashed changes
