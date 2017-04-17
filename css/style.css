@@ -182,7 +182,7 @@ ul {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-justify-content: center;
+/*justify-content: center;*/
   height: auto;
   width: 100%; }
 
@@ -194,7 +194,9 @@ justify-content: center;
   margin: 20px 30px 30px;
   position: relative;
   text-transform: uppercase;
-  width: 19.27083vw; }
+  width: 19.27083vw; } position: relative;
+196
+ 
 
 .item {
   cursor: pointer;
@@ -202,7 +204,9 @@ justify-content: center;
   transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in; }
-
+.item:hover {
+  margin-top: -10px;
+}
 .product .item:hover {
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
   top: -20px; }
