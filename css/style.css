@@ -173,7 +173,7 @@ ul {
     display: inline-block; }
   .social a {
     color: #ccc;
-    margin: 0 10px;
+    margin: 0 10px;s
     text-decoration: none; }
   .social li:hover a {
     color: #333; }
@@ -182,9 +182,9 @@ ul {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-/*justify-content: center;*/
   height: auto;
-  width: 100%; }
+  width: 100%;
+	transition: all .2s ease-in;}
 
 .product {
   cursor: pointer;
@@ -194,8 +194,7 @@ ul {
   margin: 20px 30px 30px;
   position: relative;
   text-transform: uppercase;
-  width: 19.27083vw; } position: relative;
-196
+  width: 19.27083vw;  position: relative;}
  
 
 .item {
